@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h2{
+    color: black;
+    background-color: rgb(246, 198, 135);
+    height: 100px;
+    width: 400px;
+    border-style: ridge;
+    border-color: black;
+    margin:auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+.classh1{
+    background-color: antiquewhite;
+    color: black;
+    border: 5px;
+    border-radius: 50px;
+    border-style: solid;
+    margin: auto;
+}
+nav>a{
+    color: crimson;
+}
+ul>li{
+    background-color: black;
+
+    color: chartreuse;
+    font-family: ;
+
+}
+a:hover{
+    color: aqua;
+}
+

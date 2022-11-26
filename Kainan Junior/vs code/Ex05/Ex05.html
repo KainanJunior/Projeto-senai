@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Ex01/rickroll-roll.gif" type="image/x-icon">
+    <title>Hyperlinks, âncoras e Downloads</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <a name="inicio"></a>
+    <h1 class="top">Acesso externos</h1>
+    <h2 id="id">acesso por hyperlink</h2>
+    <!-- todos os atributos dentro de <a "?" > -->
+    <p><a href="https://www.google.com.br" target="_blank" title="Google"
+    rel="external">Clique aqui</a> para acessar o google</p>
+    <h1>acesso por imagens</h1>
+    <a href="https://youtu.be/dQw4w9WgXcQ?t=42" target="_blank" title="Youtube" >
+    <img src="../Ex01/rickroll-roll.gif" alt="rick roll" height="800px" width="800px"></a> 
+
+     <br>
+
+    <h2>Acesso por botão</h2>
+    <a href="https://www.sp.senai.br/" target="_blank" 
+    rel="author"><button>Site SENAI-SP</button></a>
+
+     <br>
+
+    <h2>Outra maneira </h2> <!-- para botôes -->
+    <form action="http://suzano.sp.senai.br" method="get" target="_blank">
+    <!--  <button type="submit">SENAI SUZANO</button> -->
+    <Input type="button" value="SENAI SUZANO"></Input>           
+    </form>
+    <h1 class="olha"></h1>
+    
+    <hr>
+
+    <h1>Âncoras internas</h1>
+    <h2>acessar outras paginas</h2>
+    <p>Ir para a <button><a href="Pag2.html" rel="author" title="pagina 2">pagina 2</button></a></p>
+    <h2><a href="#inicio">Voltar para o inicio ⬆</a></h2><!-- vertical link -->
+    <h2>Acessar itens na mesma pagina </h2>
+
+</body>
+</html>

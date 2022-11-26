@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="css/layout_tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/layout_smartphone.css">
+    <script src="https://kit.fontawesome.com/fb7022c18e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container-grid conteudo-header">
+            <img class="logo" src="imagens/logos_senai_branco.png" alt="logo">
+            <nav id="menu-header" class="menu-header">
+                <a href="#" title="inicio da página">início</a>
+                <a href="#mouse">Sobre</a>
+                <a href="#endereco">Endereço</a>
+                <a class="botao" href="malito:exemplo@email.com">Contate-nos</a>
+            </nav>
+            <a class="menu-barras" href="javascript: void(0)" onclick="mostrarMenu()" >
+            <i id="icone-menu" class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="container-grid conteudo-banner">
+                <div class="texto-banner">
+                    <h1>cursos técnicos senai</h1>
+                    <div class="linha-amarela"></div>
+                    <span class="titulo-senai">Senai Informatica</span>
+                    <img src="imagens/mouse-down.png" alt="imagen de um mouse" class="mouse" id="mouse">
+                </div>
+            </div>
+        </div>
+        <section class="sobre-projetos">
+            <div class="container-grid">
+                <h2>Sobre os Projetos</h2>
+                <div class="conteudo-sobre">
+                    <img src="imagens/imagem-seção-sobre.jpg" alt="Homem explicando conteúdo do cursos para vríos alunos" class="imagem-sobre">
+                    <div class="texto-sobre">
+                        <span class="texto-participantes">participantes</span>
+                        <h3>Mais de 80 alunos organizados em 16 grupos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam dolores maxime debitis neque atque asperiores quod. Excepturi pariatur cumque, nulla consequatur doloribus fugiat! Expedita, fugiat. Commodi asperiores reiciendis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iure. Veritatis, quod nihil deleniti dolores tempore ea voluptatum eaque nesciunt. Dolorem, cum iste doloremque ipsa at quasi mollitia quo veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias, beatae ipsa impedit accusamus similique rerum, magnam quaerat ipsam libero est dolore ex. Sequi, culpa nobis veniam quisquam quam facilis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis eaque minus doloremque adipisci nulla corporis? Doloribus voluptatum itaque nam eius blanditiis, temporibus aperiam! Iste, architecto nam! Natus perferendis temporibus sequi?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container-grid conteudo-info">
+                <div class="card-info">
+                    <h3>Local</h3>
+                    <p>São Paulo</p>
+                </div>
+                <div class="card-info">
+                    <h3>Druração</h3>
+                    <p>90 Dias</p>
+                </div>
+                <div class="card-info">
+                    <h3>Desafios</h3>
+                    <p>30 Desafios</p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="endereco" id="endereco">
+            <div class="container-grid conteudo-endereco">
+                <h2>Endereco:</h2>
+                <div class="texto-endereco">
+                    <p>Alameda Barão de Limera,539 Santa Cecilia, São Paulo-SP CEP:01202-001</p>
+                </div>
+                <a href="https://goo.gl/maps/Wh6beFS51RCSmJQ9" target="blank"><img class="mapa" src="imagens/mapa.png" alt="mapa"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Copyright&copy; 2021-Escola Senai de Informática</span>
+    </footer>
+    <script>
+        function mostrarMenu(){
+            var menu=document.getElementById('menu-header');
+            var icone=document.getElementById('icone-menu');
+
+            if(getComputedStyle(menu).display=='none'){
+                menu.style.display='flex';
+                icone.classList.remove('fa-bars');
+                icone.classList.add('fa-times');
+                //Mudar para times 
+            }else{
+                menu.style.display='none';
+                icone.classList.remove('fa-times')
+                icone.classList.add('fa-bars')
+                //Mudar para bars
+            }
+        }
+    </script>
+</body>
+</html>

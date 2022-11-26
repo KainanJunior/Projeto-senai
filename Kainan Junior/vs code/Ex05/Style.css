@@ -1,0 +1,26 @@
+html{
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif
+}
+h1{
+    color:coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form>button,input{
+    background-color: rgb(255, 255, 255);
+}
+button,input{
+    background-color: aliceblue;
+}
+.top{
+    color: cadetblue;
+}
+#id{
+    color: aqua;
+}
